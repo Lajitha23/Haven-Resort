@@ -1,0 +1,193 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FEFAE0;
+  color: #0A400C;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #0A400C;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0A400C;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #FEFAE0 !important;
+}
+.nav-link {
+  color: #FEFAE0 !important;
+  transition: color 0.3s;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #B1AB86 !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #819067;
+  border: none;
+  color: #FEFAE0;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+  background-color: #0A400C;
+  transform: translateY(-2px);
+}
+.btn-dark {
+  background-color: #0A400C;
+  border: none;
+  color: #FEFAE0;
+}
+.btn-dark:hover {
+  background-color: #819067;
+}
+
+/* Cards */
+.card {
+  background-color: #FEFAE0;
+  border: 1px solid #B1AB86;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.card-title {
+  font-weight: bold;
+  color: #0A400C;
+}
+
+/* Footer */
+footer {
+  background-color: #0A400C;
+  color: #B1AB86;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 15px 0;
+}
+footer a {
+  color: #FEFAE0;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+header.hero {
+  background: url("Haven.jpg") no-repeat center center/cover;
+  color: #FEFAE0;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+header.hero h1 {
+  font-size: 3rem;
+  color: #FEFAE0
+}
+header.hero p {
+  font-size: 1.2rem;
+}
+
+/* Call-to-action */
+.cta-section {
+  background: url("Pool_villa.jpg") center/cover no-repeat;
+  color: #FEFAE0;
+}
+.cta-section .bg-dark {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+/* About Us Page */
+.about-section {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+.about-section h2 {
+  margin-bottom: 20px;
+}
+.about-section p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Services Page */
+.services-section {
+  padding: 60px 20px;
+}
+.services-section h2 {
+  margin-bottom: 40px;
+}
+.services-section .card {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gallery Page */
+.gallery-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+figcaption {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Contact Page */
+.contact-section {
+  padding: 60px 20px;
+}
+.contact-section .shadow {
+  border-radius: 10px;
+}
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #B1AB86;
+}
+form .form-control:focus {
+  border-color: #819067;
+  box-shadow: 0 0 6px rgba(129,144,103,0.5);
+}
+
+/* FAQ (Accordion) */
+.accordion-button:not(.collapsed) {
+  background-color: #819067;
+  color: #FEFAE0;
+}
+.accordion-button {
+  font-weight: 500;
+}
+.accordion-body {
+  background-color: #FEFAE0;
+  color: #0A400C;
+}
