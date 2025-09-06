@@ -16,9 +16,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-  <img src="H.png" alt="Haven Resort Logo" style="width: 80px; height: 80px; margin-right: 10px;">
-  HAVEN RESORT
-</a>
+        <img src="H.png" alt="Haven Resort Logo" width="80" height="80" style="margin-right: 10px;" loading="lazy">
+        HAVEN RESORT
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,30 +44,37 @@
   <section class="py-5" aria-label="Contact Information">
     <div class="container">
       <div class="row text-center">
+        
+        <!-- Address -->
         <div class="col-md-4 mb-4">
           <div class="p-4 shadow rounded bg-light h-100">
             <h4><i class="bi bi-geo-alt-fill text-danger"></i> Address</h4>
             <p>Haven Resort,<br> Palm Beach Road, Goa, India</p>
           </div>
         </div>
+        
+        <!-- Phone -->
         <div class="col-md-4 mb-4">
           <div class="p-4 shadow rounded bg-light h-100">
             <h4><i class="bi bi-telephone-fill text-success"></i> Phone</h4>
             <p>
-              <a>+91 98765 43210</a><br>
-              <a>+91 91234 56789</a>
+              <a href="tel:+919876543210" class="text-dark d-block">+91 98765 43210</a>
+              <a href="tel:+919123456789" class="text-dark d-block">+91 91234 56789</a>
             </p>
           </div>
         </div>
+        
+        <!-- Email -->
         <div class="col-md-4 mb-4">
           <div class="p-4 shadow rounded bg-light h-100">
             <h4><i class="bi bi-envelope-fill text-primary"></i> Email</h4>
             <p>
-              <a>info@havenresort.com</a><br>
-              <a>reservations@havenresort.com</a>
+              <a href="mailto:info@havenresort.com" class="text-dark d-block">info@havenresort.com</a>
+              <a href="mailto:reservations@havenresort.com" class="text-dark d-block">reservations@havenresort.com</a>
             </p>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -78,6 +85,7 @@
       <h2 class="text-center mb-5">Frequently Asked Questions</h2>
       <div class="accordion" id="faqAccordion">
 
+        <!-- FAQ 1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
@@ -91,6 +99,7 @@
           </div>
         </div>
 
+        <!-- FAQ 2 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
@@ -104,6 +113,7 @@
           </div>
         </div>
 
+        <!-- FAQ 3 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
@@ -117,6 +127,7 @@
           </div>
         </div>
 
+        <!-- FAQ 4 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
@@ -135,8 +146,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
+  <footer class="bg-dark text-white text-center py-4 mt-5">
     <p>&copy; 2025 Haven Resort | All Rights Reserved</p>
+    <p>
+      Email: <a href="mailto:info@havenresort.com" class="text-white">info@havenresort.com</a> | 
+      Phone: <a href="tel:+919876543210" class="text-white">+91 98765 43210</a>
+    </p>
   </footer>
 
   <!-- Bootstrap JS -->
